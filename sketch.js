@@ -1,5 +1,10 @@
 var gameState = 0
 var input1
+var input2
+var input3
+var input4
+var input5
+var YesOrNo
 function preload() {
   background1 = loadImage("Images/backgroundImage1.jpg")
   startButtonImage = loadImage("Images/StartButton.png")
@@ -44,8 +49,29 @@ function setup() {
   unfilledCheque.addImage(unfilledChequeImage)
   unfilledCheque.visible = false
 
- 
+  input1 = createInput("1.")
+  input1.position(750, 100)
+  input1.hide()
 
+  input2 = createInput("2.")
+  input2.position(750, 200)
+  input2.hide()
+
+  input3 = createInput("3.")
+  input3.position(750, 300)
+  input3.hide()
+
+  input4 = createInput("4.")
+  input4.position(750, 400)
+  input4.hide()
+
+  input5 = createInput("5.")
+  input5.position(750, 500)
+  input5.hide()
+
+  YesOrNo = createInput("Yes Or No")
+  YesOrNo.position(550, 100)
+  YesOrNo.hide()
 }
 
 function draw() {
@@ -82,17 +108,24 @@ console.log(gameState)
   stroke("pink")
   textFont("Curlz MT")
   textStyle(BOLDITALIC)
-  text("Come on!! Let's learn how to fill a cheque", 250, 100)
+  text("Come on!! Let's learn how to fill a cheque  ", 250, 100)
   next.visible = true
   filledCheque.visible = true
   next2.visible = false
   unfilledCheque.visible = false
-    
+  back.visible = false
+  input1.hide()
+  input2.hide()
+  input3.hide()
+  input4.hide()
+  input5.hide()
+  YesOrNo.hide()
+
+  
+  
 }
 
 if(mousePressedOver(next) && gameState === 1) {
-  input1 = createInput("1.")
-  input1.position(500, 500)
   
   gameState = 2;
  
@@ -108,6 +141,12 @@ if(gameState === 2) {
   next2.visible = true
   back2.visible = false
   unfilledCheque.visible = true
+  input1.show()
+  input2.show()
+  input3.show()
+  input4.show()
+  input5.show()
+  YesOrNo.hide()
   textSize(35) 
   fill("black")
   strokeWeight(2)
@@ -126,20 +165,27 @@ if(gameState === 2) {
    back.visible = false
    next2.visible = false
    input1.hide()
+   input2.hide()
+   input3.hide()
+   input4.hide()
+   input5.hide()
+   YesOrNo.show()
+
    textSize(45) 
    fill("black")
    strokeWeight(2)
    stroke("pink")
    textFont("Curlz MT")
    textStyle(BOLDITALIC)
-   text("Was it fun??!! ", 600, 70)
+   text("Was it fun??!! ", 500, 70)
    textSize(45) 
    fill("black")
    strokeWeight(2)
    stroke("pink")
    textFont("Curlz MT")
    textStyle(BOLDITALIC)
-   text("Correct answers \n 1. \n 2. \n 3. \n 4. \n 5.", 550, 250)
+   text("Correct answers \n 1. Today's date (13/04/2021) \n 2. Name of  person receving  money (Ramesh Kumar) \n 3. Amount giving to the other person in word (Ten Tousands only) \n 4.Amount giving in numbers(10,000) \n 5. Your signature (Ramesh Kumar)", 50, 200)
+   
  }
  if(mousePressedOver(back)) {
    gameState = 1
