@@ -10,7 +10,7 @@ function preload() {
   startButtonImage = loadImage("Images/StartButton.png")
   nextButtonImage = loadImage("Images/NextButtonImage.png")
   filledChequeImage = loadImage("Images/filledCheque.jpg")
-  unfilledChequeImage = loadImage("Images/UnfilledCheque.png")
+  unfilledChequeImage = loadImage("Images/unfilledCheque.png")
   backButtonImage = loadImage("Images/BackButtonImage.png")
   nextButtonImage2 = loadImage("Images/NextButtonImage.png")
 }
