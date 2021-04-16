@@ -2,7 +2,7 @@ var gameState = 0
 var input1
 function preload() {
   background1 = loadImage("Images/backgroundImage1.jpg")
-  startButtonImage = loadImage("images/StartButton.png")
+  startButtonImage = loadImage("Images/StartButton.png")
   nextButtonImage = loadImage("Images/NextButtonImage.png")
   filledChequeImage = loadImage("Images/filledCheque.jpg")
   unfilledChequeImage = loadImage("Images/unfilledCheque.png")
