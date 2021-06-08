@@ -184,7 +184,7 @@ if(gameState === 2) {
    stroke("pink")
    textFont("Curlz MT")
    textStyle(BOLDITALIC)
-   text("Correct answers \n 1. Today's date (13/04/2021) \n 2. Name of  person receving  money (Ramesh Kumar) \n 3. Amount giving to the other person in word (Ten Tousands only) \n 4.Amount giving in numbers(10,000) \n 5. Your signature (Ramesh Kumar)", 50, 200)
+   text("Correct answers \n 1. Today's date (13/04/2021) \n 2. Name of  person receving  money (Klaus Mikaelson) \n 3. Amount giving to the other person in word (Ten Tousands only) \n 4.Amount giving in numbers(10,000) \n 5. Your signature (Elijah Mikaelson)", 50, 200)
    
  }
  if(mousePressedOver(back)) {
