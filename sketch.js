@@ -15,7 +15,7 @@ function preload() {
   nextButtonImage2 = loadImage("Images/NextButtonImage.png")
 }
 function setup() {
-  createCanvas(WindowWidth, WindowHeight);
+  createCanvas(windowWidth, windowHeight);
   start = createSprite(920, 270,)
   start.addImage(startButtonImage)
   start.scale = 0.7
